@@ -14,7 +14,10 @@
 
     <ul>
       <% ingredients.forEach(ingredient => { %>
-        <li><%= ingredient.name %> <a href="/ingredient/<%= ingredient._id %>/edit"> Edit </a></li>
+        <li><%= ingredient.name %> <a href="/ingredient/<%= ingredient._id %>/edit"> Edit </a>
+          <a href="/destroy/<%= ingredient._id %>"> Delete </a>
+          <a href="/api/<%= ingredient._id %>"> JSON FILE </a>
+        </li>
       <%})%>
     </ul>
   </body>
